@@ -18,6 +18,53 @@ and installs the converted profiles directly into PrusaSlicer.
 - GUI: auto-detects config folders, checkboxes per profile, never overwrites without a backup
 - No dependency beyond Python 3.8+ (the GUI uses `tkinter`, bundled with Python on Windows)
 
+## Requirements: installing Python
+
+You need **Python 3.8 or newer**. (Not needed if you use a prebuilt `.exe`.)
+
+First check whether you already have it. Open a terminal (on Windows: press `Win + R`, type `cmd`,
+press Enter) and run:
+
+```
+py --version
+```
+
+On macOS/Linux use `python3 --version`. If you see something like `Python 3.12.x`, you are done.
+If the command is not found, install Python as follows.
+
+### Windows
+
+1. Go to <https://www.python.org/downloads/> and download the latest **Python 3** installer
+   for Windows.
+2. Run it. On the first screen, **tick "Add python.exe to PATH"** (this is the step people forget),
+   then click **Install Now**.
+3. Leave the default options: they include *tcl/tk*, which the graphical interface needs.
+4. Close and reopen your terminal, then run `py --version` to check.
+
+Alternatives: `winget install Python.Python.3.12` in a terminal, or the Microsoft Store.
+
+### macOS
+
+Download the installer from <https://www.python.org/downloads/> (it includes `tkinter`), or use
+Homebrew: `brew install python python-tk`.
+
+### Linux
+
+Use your package manager, for example on Debian/Ubuntu:
+
+```
+sudo apt install python3 python3-tk
+```
+
+`python3-tk` is only needed for the graphical interface; the command-line script works without it.
+
+### Troubleshooting
+
+- **`py` / `python` is not recognized (Windows)**: Python was installed without "Add python.exe to PATH".
+  Run the installer again, choose **Modify**, and enable it, or reinstall. Then open a *new* terminal.
+- **Double-clicking `launch.bat` does nothing or says Python is missing**: same cause as above.
+- **`No module named tkinter`**: the *tcl/tk* component was not installed. Re-run the installer
+  and make sure "tcl/tk and IDLE" is selected, or use the command-line script instead.
 ## Usage
 
 ### Graphical interface (Windows)
