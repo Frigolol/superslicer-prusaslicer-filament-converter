@@ -1,5 +1,7 @@
 # SuperSlicer ⇄ PrusaSlicer filament profile converter
 
+> **This project has moved.** It is now part of [SuperSlicer to PrusaSlicer converter](https://github.com/Frigolol/superslicer-to-prusaslicer-converter), which converts **print settings and filaments** in one program. Download the latest version from its [Releases](https://github.com/Frigolol/superslicer-to-prusaslicer-converter/releases). This repository is kept for reference and no longer updated.
+
 Convert filament profiles (`.ini`) between **SuperSlicer** and **PrusaSlicer**, in both directions.
 Includes a command-line script and a small Windows-friendly GUI that finds your slicer folders
 and installs the converted profiles directly into PrusaSlicer.
