@@ -45,8 +45,8 @@ When the output goes to another folder (`-d`), file names are kept. Otherwise a
 ### Standalone .exe (optional)
 
 ```
-pip install pyinstaller
-pyinstaller --onefile --windowed --name FilamentConverter converter_gui.py
+py -m pip install pyinstaller
+py -m pyinstaller --onefile --windowed --name FilamentConverter converter_gui.py
 ```
 
 The result is in `dist/`. Unsigned PyInstaller executables are sometimes flagged by
